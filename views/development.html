@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Adrien BARENS">
+    <title>Linux</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/index">
+        <img src="images/Tux.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Linux
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/history">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/development">Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/uses">Uses</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <br>
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Development</h2>
+                <hr>
+                <p>The primary difference between Linux and many other popular contemporary operating systems is that the Linux kernel and other components are free and open-source software. Linux is not the only such operating system, although it is by far the most widely used. Some free and open-source software licenses are based on the principle of copyleft, a kind of reciprocity: any work derived from a copyleft piece of software must also be copyleft itself. The most common free software license, the GNU General Public License (GPL), is a form of copyleft, and is used for the Linux kernel and many of the components from the GNU Project.</p>
+                <p>Free software projects, although developed through collaboration, are often produced independently of each other. The fact that the software licenses explicitly permit redistribution, however, provides a basis for larger-scale projects that collect the software produced by stand-alone projects and make it available all at once in the form of a Linux distribution.
+                <p>Many Linux distributions manage a remote collection of system software and application software packages available for download and installation through a network connection. This allows users to adapt the operating system to their specific needs. Distributions are maintained by individuals, loose-knit teams, volunteer organizations, and commercial entities. A distribution is responsible for the default configuration of the installed Linux kernel, general system security, and more generally integration of the different software packages into a coherent whole. Distributions typically use a package manager such as apt, yum, zypper, pacman or portage to install, remove, and update all of a system's software from one central location.</p>
+                <img src="images/Unix_timeline.png" alt="Unix distribution timeline" width="750" height="570">
+
+                <h2>Community</h2>
+
+                <p>A distribution is largely driven by its developer and user communities. Some vendors develop and fund their distributions on a volunteer basis, Debian being a well-known example. Others maintain a community version of their commercial distributions, as Red Hat does with Fedora, and SUSE does with openSUSE.</p>
+                <p>In many cities and regions, local associations known as Linux User Groups (LUGs) seek to promote their preferred distribution and by extension free software. They hold meetings and provide free demonstrations, training, technical support, and operating system installation to new users. Many Internet communities also provide support to Linux users and developers. Most distributions and free software / open-source projects have IRC chatrooms or newsgroups. Online forums are another means for support, with notable examples being LinuxQuestions.org and the various distribution specific support and community forums, such as ones for Ubuntu, Fedora, and Gentoo. Linux distributions host mailing lists; commonly there will be a specific topic such as usage or development for a given list.</p>
+                <p>Although Linux distributions are generally available without charge, several large corporations sell, support, and contribute to the development of the components of the system and of free software. An analysis of the Linux kernel showed 75 percent of the code from December 2008 to January 2010 was developed by programmers working for corporations, leaving about 18 percent to volunteers and 7% unclassified. Major corporations that provide contributions include Dell, IBM, HP, Oracle, Sun Microsystems (now part of Oracle) and Nokia. A number of corporations, notably Red Hat, Canonical and SUSE, have built a significant business around Linux distributions.</p>
+                <p>The free software licenses, on which the various software packages of a distribution built on the Linux kernel are based, explicitly accommodate and encourage commercialization; the relationship between a Linux distribution as a whole and individual vendors may be seen as symbiotic. One common business model of commercial suppliers is charging for support, especially for business users. A number of companies also offer a specialized business version of their distribution, which adds proprietary support packages and tools to administer higher numbers of installations or to simplify administrative tasks.</p>
+            </div><!-- /.blog-post -->
+
+        </div>
+
+        <aside class="col-md-4 blog-sidebar">
+            <br>
+            <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">Goal</h4>
+                <p class="mb-0">Linux-based distributions are intended by developers for interoperability with other operating systems and established computing standards.</p>
+            </div>
+        </aside>
+
+    </div>
+
+<%-include('partials/footer.ejs') -%>

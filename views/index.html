@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Adrien BARENS">
+    <title>Linux</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/index">
+            <img src="images/Tux.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Linux
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/development">Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/uses">Uses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <img style="float:right;width:150px;height:150px;margin-left:20px;margin-right:20px;margin-bottom:20px;" src="images/Tux.png" alt="Logo Linux" width="150" height="150">
+            <h1 class="display-3">Linux</h1>
+            <p>Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>History</h2>
+                <p>The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Laboratories in the United States by four people. First released in 1971, Unix was written entirely in assembly language, as was common practice at the time. </p>
+                <p><a class="btn btn-secondary" href="/history" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Development</h2>
+                <p>The primary difference between Linux and many other popular contemporary operating systems is that the Linux kernel and other components are free and open-source software. Linux is not the only such operating system. </p>
+                <p><a class="btn btn-secondary" href="/development" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Uses</h2>
+                <p>Besides the Linux distributions designed for general-purpose use on desktops and servers, distributions may be specialized for different purposes including: embedded systems, stability, security, ...</p>
+                <p><a class="btn btn-secondary" href="/uses" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+        
+        <p>
+        Fake Data : <%= fakeData %>
+        </p>
+
+<%-include('partials/footer.ejs') -%>
