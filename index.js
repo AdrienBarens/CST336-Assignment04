@@ -5,7 +5,7 @@ app.use(express.static("public"));
 const faker = require('faker');
 
 //routes
-app.get("/index", function(req,res){
+app.get("/", function(req,res){
     let fakeData = faker.lorem.paragraph();
    res.render("index.html", {fakeData: fakeData}); 
 });
